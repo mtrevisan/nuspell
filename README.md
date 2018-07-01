@@ -145,7 +145,7 @@ It is recomended to install a debug build of the standard library:
 For debugging we need to create a debug build and then we need to start
 `gdb`.
 
-    ./configure CXXFLAGS='-g -O0 -Wall -Wextra'
+    ./configure --enable-shared=no CXXFLAGS='-g -O0 -Wall -Wextra'
     make
     gdb src/nuspell/nuspell
 
